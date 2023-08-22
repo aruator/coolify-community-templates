@@ -1,5 +1,5 @@
 templateVersion: 1.0.0
-defaultVersion: 0.16.10
+defaultVersion: 0.17.6
 documentation: https://pocketbase.io/docs/
 type: pocketbase
 name: Pocketbase
@@ -9,5 +9,6 @@ services:
     image: ghcr.io/coollabsio/pocketbase:$$core_version
     volumes:
       - $$id-data:/app/pb_data
+      - $$id-hooks:/app/pb_hooks
     ports:
       - '8080'
